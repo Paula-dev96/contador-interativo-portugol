@@ -1,0 +1,37 @@
+Algoritmo "supercontador"
+// Disciplina   : [Lógica de Programação]
+// Professor   : Gustavo Guanabara
+// Descrição   : Esse programa permite que o usuario conte de 1 a 10 ou de 10 a 1 (função)
+// Autor(a)    : Paula Nunes dos Santos
+// Data atual  : 07/08/2025
+Var
+   cont, Resp : inteiro
+Inicio
+      Escreval ("=================")
+      Escreval ("|     MENU      |")
+      Escreval ("=================")
+      Escreval ("| [1] De 1 a 10 |")
+      Escreval ("| [2] De 10 a 1 |")
+      Escreval ("| [3] Sair      |")
+      Leia (Resp)
+
+      se resp = 1 entao
+         Cont <- 1
+              Repita
+                    Escreval (cont)
+                    Cont <- cont + 1
+              Ate (Cont > 10)
+         senao
+              se resp = 2 entao
+                  Cont <- 10
+                       Repita
+                       Escreval (cont)
+                       cont <- cont - 1
+                       Ate (cont < 1)
+              senao
+                   se resp = 3 entao
+                      Escreval ("Programa finalizado!")
+              fimse
+          fimse
+      Fimse
+Fimalgoritmo
